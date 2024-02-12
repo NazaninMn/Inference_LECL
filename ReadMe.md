@@ -77,5 +77,6 @@ The excel file output will be saved in the following directories:
 We have used code from following open-source repositories.
 
 HoVer-Net (https://github.com/vqdang/hover_net)
+
 ContrastiveSeg (https://github.com/tfzhou/ContrastiveSeg)
 
