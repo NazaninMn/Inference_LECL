@@ -22,18 +22,26 @@ Please ensure that your directory tree exactly matches the following chart:
 
 2- Please set the parameters in the run_inference.slurm file as follows:
 a- time: the running time
+
 b- gres: the type of GPU; the current value is set to gpu:a6000:1
+
 c- A: set the partition accordingly
+
 d- nuclei_channel_image: set the channel corresponding to nuclei in the fluorescent images
+
 e- marker_channel_image: set the channel corresponding to the marker in the fluorescent images
+
 f- root: set the directory to the location of the Inference_LECL
+
 g- test_list: set the name of the image 
+
 h- marker_name: set the name of the marker. You may use this name when you set the "list_markers_name" parameter in the next stage 
 
 3- Please run the run_inference.slurm file using the following command:
 sbatch run_inference.slurm
 
 The output including the excel and image files will be saved in the following directories:
+
 ```none
 ├── test_data
 │   ├── output
@@ -48,8 +56,11 @@ The output including the excel and image files will be saved in the following di
 1- First, run the previous step (i.e., Usage - results of the model for a single marker) for each marker, such as Lineage Tracing, EdU, etc., using the provided dataset.
 
 2- Please set the parameters in the integration.slurm file as follows:
+
 a- root: Set the directory to the location of the "test_data" file
+
 b- img_name: Set the name of the image in this format: 20X_name_of_the_image.tif.csv
+
 c- list_markers_name: Set the names of the channel markers you want to integrate. Note that these marker channels have the same names as those set in step 2-h of the previous procedure
 
 3- Please, run the below command to integrate the results over different markers. 
