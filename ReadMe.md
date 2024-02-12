@@ -63,6 +63,10 @@ The excel file output will be saved in the following directories:
 │   ├── integrated_results
 ```
 
+# Weights
+Please download the weights using the link below:
+
+https://drive.google.com/drive/u/1/folders/1XkBIxiPY0gFEVzJmUBl_8CeW0-6ZIgNY
 
 
 # Citation
