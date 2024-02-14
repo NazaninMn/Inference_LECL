@@ -35,7 +35,7 @@ def main():
     integrated = np.array(gaussian_filter_list).sum(0) 
     label,N = measurements.label(integrated)
     
-    data_frame = pd.DataFrame(columns=['X-centre values','Y-centre values','Categories']) 
+    data_frame = pd.DataFrame(columns=['X-centre values','Y-centre values','Z-slice position','Categories']) 
     for img in list_dir:
         if img.startswith('.')!=True:
 
