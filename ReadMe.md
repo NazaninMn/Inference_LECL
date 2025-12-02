@@ -13,7 +13,7 @@ To use the code on a new dataset, please follow the stages below:
 1- Please save the data, including the fluorescent images in TIFF format and the associated Region of Interest (ROI) files in ROI format, within directories named "TIFF_wsi" and "LesionROI". Each pair of fluorescent and ROI images should have identical names and should not contain underscores (i.e., '_').
 Please ensure that your directory tree exactly matches the following chart:
 
-```none
+```none 
 ├── Inference_LECL
 ├── test_data
 │   ├── LesionROI
